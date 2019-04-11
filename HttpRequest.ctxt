@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=HttpRequest
+comment1.params=socket\ dir
+comment1.target=HttpRequest(java.net.Socket,\ java.lang.String)
+comment2.params=
+comment2.target=void\ run()
+comment3.params=
+comment3.target=void\ HttpProcessRequest()
+comment4.params=fis\ os
+comment4.target=void\ sendBytes(java.io.FileInputStream,\ java.io.OutputStream)
+comment5.params=fileName
+comment5.target=java.lang.String\ contentType(java.lang.String)
+numComments=6
