@@ -1,22 +1,36 @@
 import java.io.*;
 import java.util.logging.*;
 import java.net.*;
- 
-public class LoggerClient {
- 
+import java.util.*;
+import java.sql.Timestamp; 
+
+public class LoggerClient  {
+    private String ipAddr;
     private static final Logger LOGGER = Logger.getLogger( LoggerClient.class.getName() );
     
+    public LoggerClient() throws Exception { super(); }
     
+    public void createLogs(String ipAddr) {
+        this.ipAddr = ipAddr;
+        logConnection();
+    }
     
+    public void logConnection() {
+        //Obtains the current timestamp of connection established
+        Date date = new Date();
+        long time  = date.getTime();
+        Timestamp ts = new Timestamp(time);
+        
+        //LOGGER.info("Logger Name: "+LOGGER.getName());
+        LOGGER.info(ipAddr + " [" + ts + "] - connection established");
+        
+    }
+    
+    /** 
     public static void main(String[] args) throws SecurityException, IOException {
-        System.out.print("\f");
         
-        //Currently for testing purposes
-        String hostName = "localhost";
-        int portNumber = 4444;
-        
+        // Write this out to a file, jesus
         try{
-            Socket socket = new Socket(hostName, portNumber);
             
             System.out.println("Test output)");
             
@@ -33,9 +47,9 @@ public class LoggerClient {
             LOGGER.log(Level.SEVERE, "Exception occur", ex);
         }
          
- 
+        */
+       
     }
     
     
  
-}

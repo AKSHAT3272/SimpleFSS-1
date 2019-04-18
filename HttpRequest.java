@@ -2,11 +2,16 @@ import java.io.* ;
 import java.net.* ;
 import java.util.* ;
 
-final class HttpRequest implements Runnable {
+public class HttpRequest implements Runnable {
     //Carriage Return Line Feed (windows \r unix \n)
     final static String CRLF = "\r\n"; 
     Socket socket;
     String dir;
+    
+    public HttpRequest() throws Exception {
+       ServerSocket socket = new ServerSocket((new Integer("4444")).intValue());
+       String dir = "RSA";
+    }
 
     public HttpRequest(Socket socket, String dir) throws Exception {
         this.socket = socket;
@@ -18,7 +23,15 @@ final class HttpRequest implements Runnable {
     //the object's run method to be called in that separately executing thread.
     public void run() {
         try {
+            System.out.println("\f");
             HttpProcessRequest();
+            
+            //Creates anew Logger client to use the Logging abiliteis
+            LoggerClient logger = new LoggerClient();
+            
+            //Get the IP address of the client connection to the site
+            String ipAddr = Inet4Address.getLocalHost().toString();
+            logger.createLogs(ipAddr);
         } catch (Exception e) {
             System.out.println(e);
         }
