@@ -6,4 +6,6 @@ comment2.params=ipAddr
 comment2.target=void\ createLogs(java.lang.String)
 comment3.params=
 comment3.target=void\ logConnection()
-numComments=4
+comment4.params=filename\ headerList
+comment4.target=void\ logHTTPRequest(java.lang.String,\ java.util.ArrayList)
+numComments=5

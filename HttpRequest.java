@@ -1,10 +1,11 @@
 import java.io.* ;
 import java.net.* ;
-import java.util.* ;
+import java.util.*;
 
 public class HttpRequest implements Runnable {
     //Carriage Return Line Feed (windows \r unix \n)
     final static String CRLF = "\r\n"; 
+    LoggerClient logger = new LoggerClient();
     Socket socket;
     String dir;
     
@@ -27,10 +28,12 @@ public class HttpRequest implements Runnable {
             HttpProcessRequest();
             
             //Creates anew Logger client to use the Logging abiliteis
-            LoggerClient logger = new LoggerClient();
+            
             
             //Get the IP address of the client connection to the site
             String ipAddr = Inet4Address.getLocalHost().toString();
+            
+            //Starts the logging process
             logger.createLogs(ipAddr);
         } catch (Exception e) {
             System.out.println(e);
@@ -49,6 +52,7 @@ public class HttpRequest implements Runnable {
         String fileName = tokens.nextToken();  
         fileName = this.dir + fileName;
         System.out.println("Filename: " + fileName);
+                
         // Open the file.
         FileInputStream fis = null ;
         boolean fileExists = true ;
@@ -59,9 +63,17 @@ public class HttpRequest implements Runnable {
         }
         System.out.println(request);
         String headerLine = null;
+        
+        ArrayList <String> header = new ArrayList<>();
+        
         while ((headerLine = br.readLine()).length() != 0) {
             System.out.println(headerLine);
+            header.add(headerLine); //add each header line to the arraylist
         }
+        
+        // send it to the logger
+        logger.logHTTPRequest(fileName, header);
+        
         // HTTP Return Request.
         String statusLine = null;
         String contentTypeLine = null;
@@ -76,7 +88,8 @@ public class HttpRequest implements Runnable {
             entityBody = "<HTML>" + 
             "<HEAD><TITLE>Not Found</TITLE></HEAD>" +
             "<BODY>Not Found</BODY></HTML>";
-        }
+        }        
+        
         os.writeBytes(statusLine);
         os.writeBytes(contentTypeLine);
         os.writeBytes(CRLF); //end of line
