@@ -1,2 +1,17 @@
-Apr 23, 2019 2:53:28 PM LoggerClient logConnection
-INFO: Lynoska/10.74.185.171 [2019-04-23 14:53:28.323] - connection established
+Apr 25, 2019 9:38:58 PM LoggerClient connection
+INFO: Lynoska/192.168.0.9 - connection established
+
+Apr 25, 2019 9:38:58 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.9 - HTTP Request 
+GET /FSSTest HTTP/1.1
+Filename: C:\Users\lynos\Downloads\/FSSTest
+Host: localhost:4444
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+

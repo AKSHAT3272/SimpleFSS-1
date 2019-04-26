@@ -25,7 +25,7 @@ public class HttpRequest implements Runnable {
     public void run() {
         try {
             System.out.println("\f");
-            HttpProcessRequest();
+            // HttpProcessRequest();
             
             //Creates anew Logger client to use the Logging abiliteis
             
@@ -33,8 +33,12 @@ public class HttpRequest implements Runnable {
             //Get the IP address of the client connection to the site
             String ipAddr = Inet4Address.getLocalHost().toString();
             
-            //Starts the logging process
-            logger.createLogs(ipAddr);
+            // Sets up the logger for the server
+            logger.setupLogger();
+            // Logs the client connection to the server
+            logger.connection(ipAddr);
+            // The HTTP Reuqest gets logged
+            HttpProcessRequest();
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -44,35 +48,36 @@ public class HttpRequest implements Runnable {
         InputStream in = socket.getInputStream();
         DataOutputStream os = new DataOutputStream(socket.getOutputStream());
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        
         //get the http request
         String request = br.readLine();
+        
         // get the file name
         StringTokenizer tokens = new StringTokenizer(request);
         tokens.nextToken(); 
         String fileName = tokens.nextToken();  
         fileName = this.dir + fileName;
-        System.out.println("Filename: " + fileName);
                 
         // Open the file.
         FileInputStream fis = null ;
         boolean fileExists = true ;
+        
         try {
             fis = new FileInputStream(fileName);
         } catch (FileNotFoundException e) {
             fileExists = false ;
         }
-        System.out.println(request);
-        String headerLine = null;
         
+        String headerLine = null;
         ArrayList <String> header = new ArrayList<>();
         
+        // adds each header line to the arraylist 
         while ((headerLine = br.readLine()).length() != 0) {
-            System.out.println(headerLine);
-            header.add(headerLine); //add each header line to the arraylist
+            header.add(headerLine); 
         }
         
-        // send it to the logger
-        logger.logHTTPRequest(fileName, header);
+        // send the HTTPRequest to the logger
+        logger.HTTPRequest(fileName, request, header);
         
         // HTTP Return Request.
         String statusLine = null;

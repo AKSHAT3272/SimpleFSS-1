@@ -2,10 +2,10 @@
 comment0.target=LoggerClient
 comment1.params=
 comment1.target=LoggerClient()
-comment2.params=ipAddr
-comment2.target=void\ createLogs(java.lang.String)
-comment3.params=
-comment3.target=void\ logConnection()
-comment4.params=filename\ headerList
-comment4.target=void\ logHTTPRequest(java.lang.String,\ java.util.ArrayList)
+comment2.params=
+comment2.target=void\ setupLogger()
+comment3.params=ipAddr
+comment3.target=void\ connection(java.lang.String)
+comment4.params=filename\ request\ headerList
+comment4.target=void\ HTTPRequest(java.lang.String,\ java.lang.String,\ java.util.ArrayList)
 numComments=5
