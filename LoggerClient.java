@@ -15,7 +15,7 @@ public class LoggerClient  {
     public void setupLogger() {
         try {
             // file to write the logs to
-            fh = new FileHandler("simplefss-logs.txt");
+            fh = new FileHandler("simplefss-logs.txt", true);
             
             // helps to format the log messages to appropriate format
             formatter = new SimpleFormatter();  

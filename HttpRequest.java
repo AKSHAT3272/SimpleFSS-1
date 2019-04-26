@@ -5,13 +5,13 @@ import java.util.*;
 public class HttpRequest implements Runnable {
     //Carriage Return Line Feed (windows \r unix \n)
     final static String CRLF = "\r\n"; 
-    LoggerClient logger = new LoggerClient();
+    LoggerClient logger;
     Socket socket;
     String dir;
     
     public HttpRequest() throws Exception {
        ServerSocket socket = new ServerSocket((new Integer("4444")).intValue());
-       String dir = "RSA";
+       String dir = "FSSTest";
     }
 
     public HttpRequest(Socket socket, String dir) throws Exception {
@@ -28,7 +28,7 @@ public class HttpRequest implements Runnable {
             // HttpProcessRequest();
             
             //Creates anew Logger client to use the Logging abiliteis
-            
+            logger = new LoggerClient();
             
             //Get the IP address of the client connection to the site
             String ipAddr = Inet4Address.getLocalHost().toString();
@@ -37,7 +37,7 @@ public class HttpRequest implements Runnable {
             logger.setupLogger();
             // Logs the client connection to the server
             logger.connection(ipAddr);
-            // The HTTP Reuqest gets logged
+            // The HTTP Request gets logged
             HttpProcessRequest();
         } catch (Exception e) {
             System.out.println(e);
