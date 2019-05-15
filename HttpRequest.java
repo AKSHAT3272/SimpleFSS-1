@@ -8,10 +8,10 @@ public class HttpRequest implements Runnable {
     LoggerClient logger;
     Socket socket;
     String dir;
-    
+
     public HttpRequest() throws Exception {
-       ServerSocket socket = new ServerSocket((new Integer("4444")).intValue());
-       String dir = "FSSTest";
+        ServerSocket socket = new ServerSocket((new Integer("4444")).intValue());
+        String dir = "FSSTest";
     }
 
     public HttpRequest(Socket socket, String dir) throws Exception {
@@ -26,13 +26,13 @@ public class HttpRequest implements Runnable {
         try {
             System.out.println("\f");
             // HttpProcessRequest();
-            
+
             //Creates anew Logger client to use the Logging abiliteis
             logger = new LoggerClient();
-            
+
             //Get the IP address of the client connection to the site
             String ipAddr = Inet4Address.getLocalHost().toString();
-            
+
             // Sets up the logger for the server
             logger.setupLogger();
             // Logs the client connection to the server
@@ -48,37 +48,37 @@ public class HttpRequest implements Runnable {
         InputStream in = socket.getInputStream();
         DataOutputStream os = new DataOutputStream(socket.getOutputStream());
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
-        
+
         //get the http request
         String request = br.readLine();
-        
+
         // get the file name
         StringTokenizer tokens = new StringTokenizer(request);
         tokens.nextToken(); 
         String fileName = tokens.nextToken();  
         fileName = this.dir + fileName;
-                
+
         // Open the file.
         FileInputStream fis = null ;
         boolean fileExists = true ;
-        
+
         try {
             fis = new FileInputStream(fileName);
         } catch (FileNotFoundException e) {
             fileExists = false ;
         }
-        
+
         String headerLine = null;
         ArrayList <String> header = new ArrayList<>();
-        
+
         // adds each header line to the arraylist 
         while ((headerLine = br.readLine()).length() != 0) {
             header.add(headerLine); 
         }
-        
+
         // send the HTTPRequest to the logger
         logger.HTTPRequest(fileName, request, header);
-        
+
         // HTTP Return Request.
         String statusLine = null;
         String contentTypeLine = null;
@@ -90,11 +90,11 @@ public class HttpRequest implements Runnable {
         } else {
             statusLine = "HTTP/1.0 404 Not Found" + CRLF;
             contentTypeLine = "Content-Type: text/html" + CRLF;
-            entityBody = "<HTML>" + 
+            entityBody = "<HTML>" +
             "<HEAD><TITLE>Not Found</TITLE></HEAD>" +
-            "<BODY>Not Found</BODY></HTML>";
-        }        
-        
+            "<BODY><meta http-equiv=\"refresh\" content=\"0; URL='http://localhost:4444/index.html'\" /></BODY></HTML>";
+        }
+
         os.writeBytes(statusLine);
         os.writeBytes(contentTypeLine);
         os.writeBytes(CRLF); //end of line
@@ -124,6 +124,23 @@ public class HttpRequest implements Runnable {
         if(fileName.endsWith(".htm") || fileName.endsWith(".html")) {
             return "text/html";
         }
-            return "application/x-php php";
+
+        if(fileName.endsWith(".css")){
+            return "text/css";
+        }
+        if(fileName.endsWith(".js")) {
+            return "application/x-javascript";
+        }
+
+        if(fileName.endsWith(".mp3")) {
+            return "audio/mpeg3";
+        }
+        if(fileName.endsWith(".mp4"))
+        {
+            return "video/mp4";
+        }
+        //return "application/x-php" ;
+        return "text/html";
     }
+
 }
