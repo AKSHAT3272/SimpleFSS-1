@@ -5,15 +5,17 @@ import java.util.* ;
 public final class FileServer {
 
   public static void main(String argv[]) throws Exception {
-	int port = 0;
-	String dir = null;
+	int port = 4444;
+	String dir = "Home\\";
+	
+	/** UNCOMMENT if option to specify a different directory and port is wanted
 	try {
 	    port = (new Integer(argv[0])).intValue();
 	    dir = argv[1];
 	} catch (ArrayIndexOutOfBoundsException e) {
 	    System.out.println("Needs: port and directory");
 	    System.exit(-1);
-	}
+	}*/
 	
 	ServerSocket socket = new ServerSocket(port);
 	// Process HTTP requests
