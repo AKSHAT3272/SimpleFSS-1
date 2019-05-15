@@ -5,17 +5,18 @@ import java.util.*;
 import java.sql.Timestamp; 
 
 public class LoggerClient  {
-    private String ipAddr;
+    private static String ipAddr;
+    private static final String LOGFILE = "simplefss-logs.txt";
     private static final Logger LOGGER = Logger.getLogger( LoggerClient.class.getName() );
-    SimpleFormatter formatter;
-    FileHandler fh;
+    private static SimpleFormatter formatter;
+    private static FileHandler fh;
 
     public LoggerClient() throws Exception { super(); }
 
-    public void setupLogger() {
+    static{
         try {
             // file to write the logs to
-            fh = new FileHandler("simplefss-logs.txt", true);
+            fh = new FileHandler(LOGFILE, true);
             
             // helps to format the log messages to appropriate format
             formatter = new SimpleFormatter();  
