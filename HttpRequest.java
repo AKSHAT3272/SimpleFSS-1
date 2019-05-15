@@ -27,14 +27,12 @@ public class HttpRequest implements Runnable {
             System.out.println("\f");
             // HttpProcessRequest();
 
-            //Creates anew Logger client to use the Logging abiliteis
+            //Creates and sets up a new Logger client to use the Logging abiliteis
             logger = new LoggerClient();
 
             //Get the IP address of the client connection to the site
             String ipAddr = Inet4Address.getLocalHost().toString();
 
-            // Sets up the logger for the server
-            logger.setupLogger();
             // Logs the client connection to the server
             logger.connection(ipAddr);
             // The HTTP Request gets logged
