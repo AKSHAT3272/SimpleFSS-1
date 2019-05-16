@@ -31,7 +31,7 @@ has no login systemas it meant to be open to public.
 | | The client connection is logged |
 | | HTTPRequest is created |
 | | ↳ HTTP request is obtained from the browser |
-| | ↳ StringTokenizer ??? |
+| | ↳ StringTokenizer Extract the filename from the request line |
 | | ↳ The file stream is initalized to process the files available |
 | | ↳ The header lines are formatted and logged |
 | | ↳ HTTP return requests are created, formatted and sent |
@@ -69,7 +69,6 @@ Accept-Language: en-US,en;q=0.9
 
 # Protocols
 * TCP
-* FTP
 
 # How-to use
 1. Compile the code
