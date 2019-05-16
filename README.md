@@ -111,3 +111,17 @@ Accept-Language: en-US,en;q=0.9
 * Allow for appending to file
 * User a formatter to format the logs
 * Set up the Logger in a try-catch with the destination being a final variable
+
+## Testing
+We tested this project by created a simple version of what our final project became. A simple log system that just noted a client connection to the server verified that the server was created properly, despite it having no directory yet. 
+
+Testing via the logger was crucial because it informed us when we made progress in our project. We had run into the issue that despite us specifying the directory where the files were located, we could not get them to actually list. The loger confirmed that the web server was set up correctly but the function was not correct. 
+
+The logger also verified the correctness of the header lines and the HTTP requests as it logged everything to the console. This also helped us make sure the requests were properly formatted.
+
+## Conclusion
+Given more time, we would have liked to implement more features and expand out project:
+1. Create a login system which would track the connection by IP an usernames
+2. Implement a download ability so that when a file is clicked, it is automatically downloaded
+3. Given that the download ability is implemented, have the loggerClient also log this
+4. Have the files in the directory formatted automatically in the HTML site so we don't have to hardcode them
