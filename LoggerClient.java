@@ -29,7 +29,7 @@ public class LoggerClient  {
             fh.setFormatter(formatter); 
 
             // stops log from being outputted to console
-            //LOGGER.setUseParentHandlers(false);
+            LOGGER.setUseParentHandlers(false);
 
             // adds the log file as a handler so that output is sent here
             LOGGER.addHandler(fh);
