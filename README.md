@@ -57,7 +57,10 @@ Accept-Language: en-US,en;q=0.9
 
 ## 1.3 Actual issues
 ### Web Server Issues
-* 
+* Executing php script on java web server
+* Defining correct MIME (Multi-Purpose Internet Mail Extensions) type for different file extensions
+* Inconsistency or missing files in local database might cause synchronization issues
+
 ### Logger Issues
 * Logger would only write to console
 * Logger would erase previously written logs
@@ -66,7 +69,10 @@ Accept-Language: en-US,en;q=0.9
 
 ## 1.4 Solutions to Actual Problem
 ### Web Server Solutions
-*
+* Creating a php-java bridge, i.e., connecting a native script engine like php with Java virtual machine would execute php script on the web server
+* Defining multiple mime types for a particular extension (example: application/javascript, text/javascript)
+* Having a backup database or check the database for inconsistencies everytime a change is made to local directory
+
 ### Logger Issues
 * Add a file handler to send the logs to
 * Allow for appending to file
