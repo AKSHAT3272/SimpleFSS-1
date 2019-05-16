@@ -1,2 +1,6 @@
 /FSSTest
 .DS_Store
+*.class
+*.ctxt
+README.TXT
+package.bluej
