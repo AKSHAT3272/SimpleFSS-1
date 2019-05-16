@@ -17,7 +17,7 @@ has no login systemas it meant to be open to public.
 
 # Design Overview  
 ## 1.1 Overall class structure  
-![Class structure](https://github.com/lynoska/SimpleFSS/blob/master/img/class-architecture.PNG)
+![Class structure](https://github.com/lynoska/SimpleFSS/blob/master/img/project-architecture.PNG)
 
 ## 1.2 Logs structure
 ```
