@@ -41,3 +41,30 @@ Accept-Language: en-US,en;q=0.9
 
 ## 1.3 Website structure  
 ![Website structure](https://github.com/lynoska/SimpleFSS/blob/master/img/web-structure.PNG)
+
+# Protocols
+* TCP
+* FTP
+
+# Issues and Solutions
+## 1.1 Anticipated issues  
+* Displaying the directories onto the web server with Java
+* Creating logs
+* Upon connection grabbing the user's IP Address
+
+## 1.2 Anticipated Solutions
+* Using telnet to request files would not require the direstory being listed
+
+## 1.3 Actual issues
+
+* Logger would only write to console
+* Logger would erase previously written logs
+* Format of logs caused readibility issues
+* Logger would log to multiple files for every file on the web server directory
+
+## 1.4 Solutions to Actual Problem
+
+* Add a file handler to send the logs to
+* Allow for appending to file
+* User a formatter to format the logs
+* Set up the Logger in a try-catch with the destination being a final variable
