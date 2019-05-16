@@ -56,14 +56,18 @@ Accept-Language: en-US,en;q=0.9
 * Using telnet to request files would not require the direstory being listed
 
 ## 1.3 Actual issues
-
+### Web Server Issues
+* 
+### Logger Issues
 * Logger would only write to console
 * Logger would erase previously written logs
 * Format of logs caused readibility issues
 * Logger would log to multiple files for every file on the web server directory
 
 ## 1.4 Solutions to Actual Problem
-
+### Web Server Solutions
+*
+### Logger Issues
 * Add a file handler to send the logs to
 * Allow for appending to file
 * User a formatter to format the logs
