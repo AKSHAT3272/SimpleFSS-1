@@ -59,7 +59,7 @@ Accept-Language: en-US,en;q=0.9
 ### Web Server Issues
 * Executing php script on java web server
 * Defining correct MIME (Multi-Purpose Internet Mail Extensions) type for different file extensions
-* Inconsistency or missing files in local databse might cause synchronization issues
+* Inconsistency or missing files in local database might cause synchronization issues
 
 ### Logger Issues
 * Logger would only write to console
