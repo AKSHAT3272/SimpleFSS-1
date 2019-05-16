@@ -31,7 +31,7 @@ has no login systemas it meant to be open to public.
 | | The client connection is logged |
 | | HTTPRequest is created |
 | | ↳ HTTP request is obtained from the browser |
-| | ↳ StringTokenizer Extract the filename from the request line |
+| | ↳ StringTokenizer extracts the filename from the request line  |
 | | ↳ The file stream is initalized to process the files available |
 | | ↳ The header lines are formatted and logged |
 | | ↳ HTTP return requests are created, formatted and sent |
