@@ -71,6 +71,14 @@ Accept-Language: en-US,en;q=0.9
 * TCP
 * FTP
 
+# How-to use
+1. Compile the code
+2. Create a new FileServer Object
+![FileServer Method Call](https://github.com/lynoska/SimpleFSS/blob/master/img/fileserver-methodcall.PNG =250x250)
+  - This will start a socket on your localhost and port 4444
+3. On your browser go to: http://localhost:4444/
+4. Browse through
+
 # Issues and Solutions
 ## 1.1 Anticipated issues  
 * Displaying the directories onto the web server with Java
