@@ -74,8 +74,8 @@ Accept-Language: en-US,en;q=0.9
 # How-to use
 1. Compile the code
 2. Create a new FileServer Object  
-![FileServer Method Call](https://github.com/lynoska/SimpleFSS/blob/master/img/fileserver-methodcall.PNG =150x150)  
-####### - This will start a socket on your localhost and port 4444
+![FileServer Method Call](https://github.com/lynoska/SimpleFSS/blob/master/img/fileserver-methodcall.PNG)  
+(This will start a socket on your localhost and port 4444)  
 3. On your browser go to: http://localhost:4444/
 4. Browse through
 
