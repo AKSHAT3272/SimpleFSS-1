@@ -21,9 +21,9 @@ has no login systemas it meant to be open to public.
 | --- | --- |
 | FileServer | Creaters the ServerSocker with the given port |
 | | Processes the HTTP Requests |
-| | -> Accepts the TCP connection requests |
-| | -> Initializes the HTTP requets givent the TCP connection request and directory where the files are located |
-| | -> Creates Threads for each requests and initialzes them |
+| | ↳ Accepts the TCP connection requests |
+| | ↳ Initializes the HTTP requets givent the TCP connection request and directory where the files are located |
+| | ↳ Creates Threads for each requests and initialzes them |
 
 ## 1.1 FileServer
 * Creaters the ServerSocker with the given port
