@@ -13,57 +13,56 @@ public class LoggerClient  {
 
     public LoggerClient() throws Exception { super(); }
 
-    static{
-        try {
-            // file to write the logs to
-            fh = new FileHandler(LOGFILE, true);
-            
-            // helps to format the log messages to appropriate format
-            formatter = new SimpleFormatter();  
-            fh.setFormatter(formatter); 
-            
-            // stops log from being outputted to console
-            //LOGGER.setUseParentHandlers(false);
-            
-            // adds the log file as a handler so that output is sent here
-            LOGGER.addHandler(fh);
-            
-            // logConnection();
-            LOGGER.getHandlers();
-        } catch (IOException e) {
-            e.printStackTrace();
+        static{
+            try {
+                // file to write the logs to
+                fh = new FileHandler(LOGFILE, true);
+                
+                // helps to format the log messages to appropriate format
+                formatter = new SimpleFormatter();  
+                fh.setFormatter(formatter); 
+                
+                // stops log from being outputted to console
+                //LOGGER.setUseParentHandlers(false);
+                
+                // adds the log file as a handler so that output is sent here
+                LOGGER.addHandler(fh);
+                
+                // logConnection();
+                LOGGER.getHandlers();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-    }
     
-    // Logs the connections made
-    public void connection(String ipAddr) { 
-        this.ipAddr = ipAddr;
-
-        //Obtains the current timestamp of connection established
-        Date date = new Date();
-        long time  = date.getTime();
-        Timestamp ts = new Timestamp(time);
-
-        LOGGER.info(ipAddr + " - connection established\r\n");
-    }
+        // Logs the connections made
+        public void connection(String ipAddr) { 
+            this.ipAddr = ipAddr;
     
-    // Logs the HTTP Request
-    public void HTTPRequest(String filename, String request, ArrayList headerList) {
-        Date date = new Date();
-        long time  = date.getTime();
-        Timestamp ts = new Timestamp(time);
-        
-        String header = "";
-        
-        // Combines the elements of the header for it to be sent out as one unit
-        for(int i=0; i<headerList.size(); i++) {
-            header += headerList.get(i) + "\r\n";
+            //Obtains the current timestamp of connection established
+            Date date = new Date();
+            long time  = date.getTime();
+            Timestamp ts = new Timestamp(time);
+    
+            LOGGER.info(ipAddr + " - connection established\r\n");
         }
         
-        LOGGER.info(ipAddr + " - HTTP Request \r\n" + request + "\r\nFilename: " 
-            + filename + "\r\n" + header + "\r\n");
-    }
-
+        // Logs the HTTP Request
+        public void HTTPRequest(String filename, String request, ArrayList headerList) {
+            Date date = new Date();
+            long time  = date.getTime();
+            Timestamp ts = new Timestamp(time);
+            
+            String header = "";
+            
+            // Combines the elements of the header for it to be sent out as one unit
+            for(int i=0; i<headerList.size(); i++) {
+                header += headerList.get(i) + "\r\n";
+            }
+            
+            LOGGER.info(ipAddr + " - HTTP Request \r\n" + request + "\r\nFilename: " 
+                + filename + "\r\n" + header + "\r\n");
+        }
 }
 
  
