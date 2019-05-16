@@ -24,32 +24,21 @@ has no login systemas it meant to be open to public.
 | | ↳ Accepts the TCP connection requests |
 | | ↳ Initializes the HTTP requets givent the TCP connection request and directory where the files are located |
 | | ↳ Creates Threads for each requests and initialzes them |
-
-## 1.1 FileServer
-* Creaters the ServerSocker with the given port
-* Processes the HTTP Requests
-  - Accepts the TCP connection requests
-  - Initializes the HTTP requets givent the TCP connection request and directory where the files are located
-  - Creates Threads for each requests and initialzes them
-  
-## 1.2 HttpRequest
-* Creates the HttpRequests with option to create object with different sockets and directories than the ones set
-* Implements Runnable to create the threat and create the web server
-* Initializes the logger at run time to ensure connections are log as soon as there is one
-* Once the client conntects, their IP address is grabbed
-* The client connection is logger
-* HTTPRequest is created
-  - HTTP request is obtained from the browser
-  - StringTokenizer ???
-  - The file stream is initalized to process the files available 
-  - The header lines are formatted and logged
-  - HTTP return requests are created, formatted and sent
-  
-## 1.3 LoggerClient
-* Creates a Logger client which logs to external pre-determined file (`simplefss-logs.txt`)
-* Logs are formatted for readability
-* Client connections to server are logged with timestamp and IP address
-* Client's HTTP request logged with timestamp, IP address and and request
+| HttpRequest | Creates the HttpRequests with option to create object with different sockets and directories than the ones set |
+| | Implements Runnable to create the threat and create the web server |
+| | Initializes the logger at run time to ensure connections are log as soon as there is one |
+| | Once the client conntects, their IP address is grabbed |
+| | The client connection is logged |
+| | HTTPRequest is created |
+| | ↳ HTTP request is obtained from the browser |
+| | ↳ StringTokenizer ??? |
+| | ↳ The file stream is initalized to process the files available |
+| | ↳ The header lines are formatted and logged |
+| | ↳ HTTP return requests are created, formatted and sent |
+| LoggerClient | Creates a Logger client which logs to external pre-determined file (`simplefss-logs.txt`) |
+| | Logs are formatted for readability |
+| | Client connections to server are logged with timestamp and IP address |
+| | Client's HTTP request logged with timestamp, IP address and and request |
 
 # Design Overview  
 ## 1.1 Overall class structure  
