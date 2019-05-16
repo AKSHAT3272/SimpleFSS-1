@@ -1,5 +1,5 @@
 # SimpleFSS
-Simple File Sharing System in Java
+###### Simple File Sharing System in Java with Logging -- Lynoska Garcia and Akshat Patel
 
 # Introduction
 ## 1.1 Purpose
@@ -14,6 +14,31 @@ and provide the ability for a client to access the website and services
 hosted by the Server through a Web Server. The Server also runs a logger
 which logs connections made and records the files accessed. The system 
 has no login systemas it meant to be open to public.
+
+# Functionality
+
+| Class | Description |
+| --- | --- |
+| FileServer | Creaters the ServerSocker with the given port |
+| | Processes the HTTP Requests |
+| | ↳ Accepts the TCP connection requests |
+| | ↳ Initializes the HTTP requets givent the TCP connection request and directory where the files are located |
+| | ↳ Creates Threads for each requests and initialzes them |
+| HttpRequest | Creates the HttpRequests with option to create object with different sockets and directories than the ones set |
+| | Implements Runnable to create the threat and create the web server |
+| | Initializes the logger at run time to ensure connections are log as soon as there is one |
+| | Once the client conntects, their IP address is grabbed |
+| | The client connection is logged |
+| | HTTPRequest is created |
+| | ↳ HTTP request is obtained from the browser |
+| | ↳ StringTokenizer ??? |
+| | ↳ The file stream is initalized to process the files available |
+| | ↳ The header lines are formatted and logged |
+| | ↳ HTTP return requests are created, formatted and sent |
+| LoggerClient | Creates a Logger client which logs to external pre-determined file (`simplefss-logs.txt`) |
+| | Logs are formatted for readability |
+| | Client connections to server are logged with timestamp and IP address |
+| | Client's HTTP request logged with timestamp, IP address and and request |
 
 # Design Overview  
 ## 1.1 Overall class structure  

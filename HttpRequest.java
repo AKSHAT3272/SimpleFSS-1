@@ -19,9 +19,10 @@ public class HttpRequest implements Runnable {
         this.dir = dir;
     }
 
-    //run() from Runnable interface 
-    //When an object implementing interface Runnable is used to create a thread, starting the thread causes 
-    //the object's run method to be called in that separately executing thread.
+    /**
+    * run() from Runnable interface 
+    * When an object implementing interface Runnable is used to create a thread, starting the thread causes 
+    the object's run method to be called in that separately executing thread. */
     public void run() {
         try {
             System.out.println("\f");
@@ -41,7 +42,12 @@ public class HttpRequest implements Runnable {
             System.out.println(e);
         }
     }
-
+    /**
+     * Processes HTTP request through InputStream and BufferedReader
+     * 
+     * Precondition: none
+     * Postcondition: Sends correct HTTP header if file is found, or redirects to index.html
+     */
     private void HttpProcessRequest() throws Exception {
         InputStream in = socket.getInputStream();
         DataOutputStream os = new DataOutputStream(socket.getOutputStream());
@@ -106,6 +112,13 @@ public class HttpRequest implements Runnable {
         br.close();
         socket.close();
     }
+    
+    /**
+     * Creates a 1k buffer to send the file into socket output
+     * 
+     * Precondition: Directory and file must be defined
+     * Postcondition: Sends requested file into socket output
+     */
 
     private static void sendBytes(FileInputStream fis, 
     OutputStream os) throws Exception {
@@ -117,6 +130,13 @@ public class HttpRequest implements Runnable {
             os.write(buffer, 0, bytes);
         }
     }
+    
+    /**
+     * Defines the correct MIME type based on file extension
+     * 
+     * Precondition: Directory and file must be defined
+     * Postcondition: returns the file with correct MIME type
+     */
 
     private static String contentType(String fileName) {
         if(fileName.endsWith(".htm") || fileName.endsWith(".html")) {
