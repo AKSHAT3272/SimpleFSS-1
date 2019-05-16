@@ -183,3 +183,390 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9
 
 
+May 14, 2019 10:09:23 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:09:23 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /howtosayno.txt HTTP/1.1
+Filename: Home\/howtosayno.txt
+Host: localhost:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:09:38 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:09:38 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /index.html HTTP/1.1
+Filename: Home\/index.html
+Host: localhost:4444
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/Videos/Videos.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:09:38 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:09:38 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /css/style.css HTTP/1.1
+Filename: Home\/css/style.css
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:09:39 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:09:39 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /howtosayno.txt HTTP/1.1
+Filename: Home\/howtosayno.txt
+Host: localhost:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:09:51 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:09:51 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /index.html HTTP/1.1
+Filename: Home\/index.html
+Host: localhost:4444
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/Videos/Videos.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:09:52 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:09:52 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /css/style.css HTTP/1.1
+Filename: Home\/css/style.css
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:09:53 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:09:53 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /howtosayno.txt HTTP/1.1
+Filename: Home\/howtosayno.txt
+Host: localhost:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:12:24 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:12:24 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /index.html HTTP/1.1
+Filename: Home\/index.html
+Host: localhost:4444
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/Videos/Videos.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:12:24 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:12:24 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /css/style.css HTTP/1.1
+Filename: Home\/css/style.css
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:12:26 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:12:26 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /howtosayno.txt HTTP/1.1
+Filename: Home\/howtosayno.txt
+Host: localhost:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:14:09 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:14:09 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /index.html HTTP/1.1
+Filename: Home\/index.html
+Host: localhost:4444
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/Videos/Videos.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:14:09 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:14:09 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /css/style.css HTTP/1.1
+Filename: Home\/css/style.css
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:14:11 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:14:11 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /howtosayno.txt HTTP/1.1
+Filename: Home\/howtosayno.txt
+Host: localhost:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:27:18 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:27:18 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /index.html HTTP/1.1
+Filename: Home\/index.html
+Host: localhost:4444
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/Videos/Videos.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:27:18 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:27:18 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /css/style.css HTTP/1.1
+Filename: Home\/css/style.css
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:29:37 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:29:37 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /index.html HTTP/1.1
+Filename: Home\/index.html
+Host: localhost:4444
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/Videos/Videos.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:29:37 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:29:37 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /css/style.css HTTP/1.1
+Filename: Home\/css/style.css
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 14, 2019 10:29:40 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 14, 2019 10:29:40 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /LoremIpsum.pdf HTTP/1.1
+Filename: Home\/LoremIpsum.pdf
+Host: localhost:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 15, 2019 10:56:13 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 15, 2019 10:56:13 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET / HTTP/1.1
+Filename: Home\/
+Host: 127.0.0.1:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 15, 2019 10:56:13 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 15, 2019 10:56:13 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /favicon.ico HTTP/1.1
+Filename: Home\/favicon.ico
+Host: 127.0.0.1:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:4444/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 15, 2019 10:56:14 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 15, 2019 10:56:14 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /index.html HTTP/1.1
+Filename: Home\/index.html
+Host: localhost:4444
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://localhost:4444/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 15, 2019 10:56:14 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 15, 2019 10:56:14 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /css/style.css HTTP/1.1
+Filename: Home\/css/style.css
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+May 15, 2019 10:56:15 PM LoggerClient connection
+INFO: Lynoska/192.168.0.6 - connection established
+
+May 15, 2019 10:56:15 PM LoggerClient HTTPRequest
+INFO: Lynoska/192.168.0.6 - HTTP Request 
+GET /favicon.ico HTTP/1.1
+Filename: Home\/favicon.ico
+Host: localhost:4444
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:4444/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
