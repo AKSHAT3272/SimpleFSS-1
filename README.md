@@ -1,5 +1,5 @@
 # SimpleFSS
-Simple File Sharing System in Java
+##### Simple File Sharing System in Java with Logging -- Lynoska Garcia and Akshat Patel
 
 # Introduction
 ## 1.1 Purpose
